@@ -1,0 +1,213 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background:rgb(186 213 204);
+}
+
+h1 {
+  font-family: 'Hurricane', cursive;
+  text-align: center;
+  color: teal;
+  font-size: 50px;
+}
+
+.btn__back {
+  cursor: pointer;
+  padding: 3px 8px;
+  background: #F7F7F7;
+  border-radius: 12px;
+}
+
+.btn__back:hover {
+  background-color: teal;
+  transition: 0.8s;
+}
+
+.game-field {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  filter: drop-shadow(0px 4px 20px rgba(44, 57, 121, 0.09));
+  gap: 4px;
+  width: min-content;
+}
+
+.game-field_cell {
+  background: #FFFFFF;
+  border-radius: 12px;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.reset-button {
+  font-family: 'Hurricane', cursive;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 3px 20px;
+  background: #F7F7F7;
+  border-radius: 12px;
+  margin: 10px auto auto auto;
+}
+
+.reset-button:hover {
+  background: crimson;
+  color: #fff;
+  transition: 0.8s;
+}
+
+.circle {
+  width: 100%;
+  height: 100%;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: draw 1s forwards;
+}
+.cross {
+  width: 100%;
+  height: 100%;
+}
+
+.cross {
+  width: 100%;
+  height: 100%;
+}
+
+.first__line {
+  stroke-dasharray: 125;
+  stroke-dashoffset: 125;
+  animation: draw 0.6s forwards;
+}
+.second__line {
+  stroke-dasharray: 125;
+  stroke-dashoffset: 125;
+  animation: draw 0.6s 0.6s forwards;
+}
+
+.btn-secondary {
+  font-family: 'Hurricane', cursive;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 3px 20px;
+  background: teal;
+  border-radius: 12px;
+}
+
+.btn__img {
+  width: 27px;
+  height: 100%;
+}
+
+.active {
+  background: rgb(44 108 92);
+  opacity: 0.8;
+}
+
+.res {
+  font-family: 'Hurricane', cursive;
+  font-size: 42px;
+  color: teal;
+}
+
+.rg__fon {
+  background-image: url(../../assets/img/fon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+.rg__form {
+  max-width: 350px;
+  background: #FFFFFF;
+  opacity: 0.8;
+  border-radius: 12px;
+}
+
+.form-control.error {
+  border-color: red;
+}
+
+.chat__title {
+  font-family: 'Hurricane', cursive;
+  font-size: 42px;
+  color: teal;
+}
+
+.chat__fon {
+  background-image: url(../../assets/img/chat_fon.jpg);
+  background-size: cover;
+}
+
+.chat__btn {
+  font-family: 'Hurricane', cursive;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 3px 20px;
+  background: teal;
+  border-radius: 12px;
+  color: #fff;
+}
+
+.chat__btn:hover {
+  opacity: 0.8;
+}
+
+.offcanvas-end {
+  width: 320px;
+  box-shadow: 15px 0px 29px 11px rgba(11, 11, 11, 0.4);
+}
+
+.chat__date {
+  font-size: 12px;
+  color: teal;
+}
+
+.chat__form {
+  min-height: 82%;
+  max-height: 82%;
+  overflow-y: auto;
+  word-break: break-all;
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    /* background-color: #fff; */
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #246152;
+    max-height: 20px;
+  }
+
+@keyframes draw {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+/* @media screen and (min-width: 900px) {
+ .game-field {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+ .game-field {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+ }
+} */
